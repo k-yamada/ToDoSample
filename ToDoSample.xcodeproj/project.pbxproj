@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091679821933F9A000BF7FBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091679811933F9A000BF7FBC /* Main.storyboard */; };
 		097A9065192D73730059995A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097A9064192D73730059995A /* Foundation.framework */; };
 		097A9067192D73730059995A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097A9066192D73730059995A /* CoreGraphics.framework */; };
 		097A9069192D73730059995A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097A9068192D73730059995A /* UIKit.framework */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091679811933F9A000BF7FBC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		097A9061192D73730059995A /* ToDoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097A9064192D73730059995A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		097A9066192D73730059995A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +111,7 @@
 			children = (
 				097A9073192D73730059995A /* TDSAppDelegate.h */,
 				097A9074192D73730059995A /* TDSAppDelegate.m */,
+				091679811933F9A000BF7FBC /* Main.storyboard */,
 				097A9076192D73730059995A /* Images.xcassets */,
 				097A906B192D73730059995A /* Supporting Files */,
 			);
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091679821933F9A000BF7FBC /* Main.storyboard in Resources */,
 				097A906F192D73730059995A /* InfoPlist.strings in Resources */,
 				097A9077192D73730059995A /* Images.xcassets in Resources */,
 			);
@@ -438,6 +442,7 @@
 				097A908F192D73730059995A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		097A9090192D73730059995A /* Build configuration list for PBXNativeTarget "ToDoSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +451,7 @@
 				097A9092192D73730059995A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
