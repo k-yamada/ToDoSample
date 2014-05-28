@@ -117,6 +117,12 @@
 */
 
 - (IBAction)saveButtonTapped:(id)sender {
+  // createItemViewControllerDidFinish: を呼び出す
+  if ([self.delegate respondsToSelector:@selector(createItemViewControllerDidFinish:item:)]) {
+    // 入力文字列を取得する
+    NSString *item = self.textField.text;
+    [self.delegate createItemViewControllerDidFinish:self item:item];
+  }
 }
 
 - (IBAction)cancelButtonTaped:(id)sender {

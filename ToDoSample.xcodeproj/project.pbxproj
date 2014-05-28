@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		091679821933F9A000BF7FBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091679811933F9A000BF7FBC /* Main.storyboard */; };
-		091679851934DDD400BF7FBC /* TDSItemListViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091679841934DDD400BF7FBC /* TDSItemListViewControllerTableViewController.m */; };
+		091679851934DDD400BF7FBC /* TDSItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091679841934DDD400BF7FBC /* TDSItemListViewController.m */; };
 		0916798E1935567A00BF7FBC /* TDSCreateItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0916798D1935567A00BF7FBC /* TDSCreateItemViewController.m */; };
 		097A9065192D73730059995A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097A9064192D73730059995A /* Foundation.framework */; };
 		097A9067192D73730059995A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097A9066192D73730059995A /* CoreGraphics.framework */; };
@@ -36,8 +36,8 @@
 
 /* Begin PBXFileReference section */
 		091679811933F9A000BF7FBC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		091679831934DDD400BF7FBC /* TDSItemListViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSItemListViewControllerTableViewController.h; sourceTree = "<group>"; };
-		091679841934DDD400BF7FBC /* TDSItemListViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSItemListViewControllerTableViewController.m; sourceTree = "<group>"; };
+		091679831934DDD400BF7FBC /* TDSItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSItemListViewController.h; sourceTree = "<group>"; };
+		091679841934DDD400BF7FBC /* TDSItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSItemListViewController.m; sourceTree = "<group>"; };
 		0916798C1935567A00BF7FBC /* TDSCreateItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSCreateItemViewController.h; sourceTree = SOURCE_ROOT; };
 		0916798D1935567A00BF7FBC /* TDSCreateItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSCreateItemViewController.m; sourceTree = SOURCE_ROOT; };
 		097A9061192D73730059995A /* ToDoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,8 +120,8 @@
 				091679811933F9A000BF7FBC /* Main.storyboard */,
 				0916798C1935567A00BF7FBC /* TDSCreateItemViewController.h */,
 				0916798D1935567A00BF7FBC /* TDSCreateItemViewController.m */,
-				091679831934DDD400BF7FBC /* TDSItemListViewControllerTableViewController.h */,
-				091679841934DDD400BF7FBC /* TDSItemListViewControllerTableViewController.m */,
+				091679831934DDD400BF7FBC /* TDSItemListViewController.h */,
+				091679841934DDD400BF7FBC /* TDSItemListViewController.m */,
 				097A9076192D73730059995A /* Images.xcassets */,
 				097A906B192D73730059995A /* Supporting Files */,
 			);
@@ -256,7 +256,7 @@
 			files = (
 				097A9075192D73730059995A /* TDSAppDelegate.m in Sources */,
 				0916798E1935567A00BF7FBC /* TDSCreateItemViewController.m in Sources */,
-				091679851934DDD400BF7FBC /* TDSItemListViewControllerTableViewController.m in Sources */,
+				091679851934DDD400BF7FBC /* TDSItemListViewController.m in Sources */,
 				097A9071192D73730059995A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

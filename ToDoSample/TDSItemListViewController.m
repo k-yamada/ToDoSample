@@ -6,16 +6,17 @@
 //  Copyright (c) 2014年 kazu. All rights reserved.
 //
 
-#import "TDSItemListViewControllerTableViewController.h"
+#import "TDSItemListViewController.h"
+#import "TDSCreateItemViewController.h"
 
-@interface TDSItemListViewControllerTableViewController ()
+@interface TDSItemListViewController () <TDSCreateItemViewControllerDelegate>
 
 // 配列のプロパティ
 @property NSMutableArray *items;
 
 @end
 
-@implementation TDSItemListViewControllerTableViewController
+@implementation TDSItemListViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -116,7 +117,7 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -124,7 +125,25 @@
 {
   // Get the new view controller using [segue destinationViewController].
   // Pass the selected object to the new view controller.
+  if ([[segue identifier] isEqualToString:@"CreateItemSegue"]) {
+    // 遷移先のTDSCreateItemViewControllerのインスタンスを取得する
+    TDSCreateItemViewController *controller = (TDSCreateItemViewController *)[[[segue destinationViewController]viewControllers] objectAtIndex:0];
+    // delegateプロパティにself(MasterViewController自身)を設定する
+    controller.delegate = self;
+  }
 }
-*/
+
+- (void) createItemViewControllerDidFinish:(TDSCreateItemViewController *) controller item:(NSString *)item {
+  // 配列がない場合は生成する
+  if (!_items) {
+    _items = [[NSMutableArray alloc] init];
+  }
+  // アイテムを先頭に追加する
+  [_items insertObject:item atIndex:0];
+  
+  // UITableViewにUITableViewCellを追加する
+  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+
+}
 
 @end

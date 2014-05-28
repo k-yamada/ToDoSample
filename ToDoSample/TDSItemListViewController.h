@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TDSItemListViewControllerTableViewController : UITableViewController
+@interface TDSItemListViewController : UITableViewController
 
 @end
